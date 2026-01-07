@@ -16,7 +16,7 @@ def train_model():
     with mlflow.start_run():
         print("Memuat dataset...")
         # Load data yang sudah bersih (angka semua)
-        df = pd.read_csv('penguins_clean.csv')
+        df = pd.read_csv('penguins_preprocessing.csv')
 
         # Pisahkan Fitur dan Target
         X = df.drop(columns=['species'])
